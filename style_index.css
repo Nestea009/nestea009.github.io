@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(backgroundimg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  width: 85%;
+  margin: auto; 
+  padding: 35px 0;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 90px;
+  cursor: pointer; 
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; 
+  position: relative; 
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s; 
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.content{
+ color: #fff;
+ position: absolute;
+ width: 100%;
+ top: 50%; 
+ transform: translateY(-50%);
+ text-align: center;
+}
+
+.content p{
+margin: 5px auto; 
+font-size: 25px;
+font-weight: 70;
+line-height: 50px; 
+}
+
+button{
+  width: 200px; 
+  padding: 15px 0; 
+  text-align: center; 
+  margin: 20px 10px;
+  border-radius: 25px; 
+  font-weight: bold;
+  border: 0px solid #009688;
+  background: transparent;
+  cursor: pointer; 
+  text-transform: uppercase;
+  font-size: large;
+  color:#fff;
+  position: relative; 
+  overflow: hidden; 
+}
+
+span{
+  background: #009688;
+  height: 100%; 
+  width: 100%; 
+  border-radius: 25px; 
+  position: absolute; 
+  opacity: 50%;
+  left: 0;
+  bottom: 0; 
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+  opacity: 100%
+}
+
+button:hover{
+  border: none; 
+}
+
+.content h1{
+  font-size: 50px;
+  margin: 25px;
+  color:#ffffff;
+  animation: fade1 2s;
+  position: absolute;
+  top: 21%;
+  left: 55%;
+}
+
+.content a h1{
+  font-size: 50px;
+  margin: 25px;
+  color:#ffffff;
+  animation: fade2 2s;
+  position: absolute;
+  top: 36%;
+  left: 52%;
+  
+}
+
+.logo_p{
+position: relative;
+top: 20%;
+left: 0%;
+
+}
+
+@keyframes fade1{
+from{
+opacity:0;
+left: 65%;
+}
+
+to{
+opacity: 1;
+left: 55%;
+}
+}
+
+@keyframes fade2{
+  from{
+  opacity:0;
+  left: 62%;
+  }
+  
+  to{
+  opacity: 1;
+  left: 52%;
+  }
+}
+

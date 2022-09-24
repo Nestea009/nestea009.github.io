@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(backgroundimg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo{
+  width: 90px;
+  cursor: pointer; 
+}
+
+.navbar{
+  width: 85%;
+  margin: auto; 
+  padding: 35px 0;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; 
+  position: relative; 
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s; 
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.content{
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 20%; 
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.content h2{
+  font-size: 60px;
+  margin: 20px;
+  color: #009688;
+}
+
+.posts{
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 48%; 
+  left: 0%;
+  transform: translateY(-50%);
+  text-align: center;
+  animation: fade 1.2s; 
+}
+
+.posts ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  
+}
+
+.posts ul li{
+font-size: 30px;
+color: #fff;
+text-transform: uppercase; 
+width: 100%;
+list-style: none;
+display: inline-block;
+margin: 20px 0px; 
+position: relative; 
+}
+
+.micomienzo-pic{
+  width: 90px;
+  position: relative;
+  left: 30px;
+  top: 40px; 
+}
+
+button{
+  width: 250px; 
+  padding: 15px 0; 
+  text-align: center; 
+  margin: 20px 10px;
+  border-radius: 25px; 
+  font-weight: bold;
+  border: 0px solid #009688;
+  background: transparent;
+  cursor: pointer; 
+  text-transform: uppercase;
+  font-size: large;
+  color:#fff;
+  position: relative; 
+  overflow: hidden; 
+
+}
+
+span{
+  background: #009688;
+  height: 100%; 
+  width: 100%; 
+  border-radius: 25px; 
+  position: absolute; 
+  opacity: 50%;
+  left: 0;
+  bottom: 0; 
+  z-index: -1;
+  transition: 0.5s;
+
+}
+
+button:hover span{
+  width: 100%;
+  opacity: 100%
+}
+
+button:hover{
+  border: none; 
+}
+
+.posts h1{
+  font-size: large; 
+  color: #fff;
+}
+
+.programandoenpython-pic{
+  width: 90px;
+  position: relative;
+  left: 30px;
+  top: 50px; 
+
+}
+
+@keyframes fade{
+  from{
+  opacity:0;
+  top: 70%;
+  
+  }
+  
+  to{
+  opacity: 1;
+  top:48%;
+
+  }
+  }
