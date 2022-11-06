@@ -179,3 +179,13 @@ button:hover{
 
   }
   }
+
+  @media (max-width: 600px) {
+    posts{
+      opacity: 0;
+      width: 80%;
+      height: 80%;
+
+    }
+
+  }
