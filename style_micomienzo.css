@@ -134,3 +134,15 @@ animation: fade 1.5s;
   opacity: 1; 
   }
 }
+
+@media (orientation: portrait) {
+    
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+
+}

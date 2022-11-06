@@ -132,8 +132,6 @@ button:hover{
 
 .logo_p{
 position: relative;
-top: 20%;
-left: 0%;
 
 }
 
@@ -161,3 +159,98 @@ left: 55%;
   }
 }
 
+@media (orientation: portrait) {
+    
+  @keyframes fade1{
+    from{
+    opacity:0;
+    left: 67%;
+    }
+    
+    to{
+    opacity: 1;
+    left: 57%;
+    }
+    }
+    
+    @keyframes fade2{
+      from{
+      opacity:0;
+      left: 56%;
+      }
+      
+      to{
+      opacity: 1;
+      left: 46%;
+      }
+    }
+
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+
+  .content{
+    top: 65%;
+
+  }
+
+  .content p{
+    margin: 5px auto; 
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px; 
+    position: absolute;
+    top:-150%;
+    left: 5%;
+    }
+
+  .content h1{
+    font-size: 100px;
+    margin: 25px;
+    color:#ffffff;
+    animation: fade1 2s;
+    position: absolute;
+    top: -510%;
+    left: 57%;
+  }
+
+  .content a h1{
+    font-size: 100px;
+    margin: 25px;
+    color:#ffffff;
+    animation: fade2 2s;
+    position: absolute;
+    top: -380%;
+    left: 46%;
+
+  }
+
+  button{
+    width: 400px; 
+    padding: 15px 0; 
+    text-align: center; 
+    margin: 20px 10px;
+    border-radius: 25px; 
+    font-weight: bold;
+    border: 0px solid #009688;
+    background: transparent;
+    cursor: pointer; 
+    text-transform: uppercase;
+    font-size: 45px;
+    color:#fff;
+    position: relative; 
+    overflow: hidden; 
+  }
+
+  .logo_p{
+    position: absolute; 
+    top:-750%;
+    left: 5%;
+    width: 65%
+  }
+
+}

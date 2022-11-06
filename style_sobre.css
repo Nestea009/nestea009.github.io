@@ -171,3 +171,15 @@
   }
   
 }
+
+@media (orientation: portrait) {
+    
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+
+}

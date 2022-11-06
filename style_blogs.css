@@ -24,6 +24,7 @@
   display: flex; 
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .navbar ul li{
@@ -31,6 +32,7 @@
   display: inline-block;
   margin: 0 20px; 
   position: relative; 
+  
 }
 
 .navbar ul li a{
@@ -180,12 +182,55 @@ button:hover{
   }
   }
 
-  @media (max-width: 600px) {
-    posts{
-      opacity: 0;
-      width: 80%;
-      height: 80%;
+  @media (orientation: portrait) {
+    
+    .logo{
+      width: 25%;
+    }
+
+    .navbar{
+      font-size: 29px;
+    }
+
+    @keyframes fade {
+      from{
+        opacity:0;
+        top: 70%;
+        
+        }
+        
+        to{
+        opacity: 1;
+        top:49%;
+      
+        }
+    }
+
+    .content{
+      top: 22%;
 
     }
 
+    .posts{
+      top: 49%;
+      
+    }
+
+    button{
+      font-size: 35px;
+      width: 550px;
+      height: 110px;
+      font-weight: bold;
+      margin: 50px 15px;
+      border-radius: 45px;
+    }
+
+    .content h2{
+      font-size: 85px;
+
+    }
+
+    .posts h1{
+      font-size: 40px;
+    }
   }

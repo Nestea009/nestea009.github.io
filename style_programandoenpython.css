@@ -150,3 +150,15 @@ animation: fade-pics-left 2s;
     top: 85%;
   }
 }
+
+@media (orientation: portrait) {
+    
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+
+}

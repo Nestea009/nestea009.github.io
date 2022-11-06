@@ -67,6 +67,7 @@
   position:relative;
   margin: 50px;
   color: #009688;
+ 
 }
 
 .content p{
@@ -92,27 +93,27 @@ font-size: 25px;
 }
 
 .html-pic{
-  width: 16%;
+  width: 18%;
   position: absolute;
-  top: 45%;
-  left:8%;
+  top: 250px;
+  left: 90px;
   animation: fade-pics-left 2s;
 }
 
 .css-pic{
-  width: 30%;
+  width: 26%;
   position: absolute;
-  top: 85%;
-  left:68%;
+  top: 600px;
+  left: 1100px;
   animation: fade-pics-right 2s; 
     
 }
 
 .htmlcode-pic{
-  width: 25%;
+  width: 27%;
   position: absolute;
-  top: 130%;
-  left:2%;
+  top: 1000px;
+  left: 30px;
   animation: fade-pics-left 2s;
 }
 
@@ -144,10 +145,79 @@ font-size: 25px;
 @keyframes fade-pics-right{
   from{
     opacity:0;
-    top: 160%;
+    left: 200%;
   }
 
     to{
     opacity: 1;
+  }
+}
+
+@media (orientation: portrait) {
+    
+  @keyframes fade{
+
+  }
+  
+  @keyframes fade-pics-left{
+
+  }
+  
+  @keyframes fade-pics-right{
+
+  }
+  .content p{
+    font-size: 30px;
+    line-height: 50px;
+    left: 50px;
+  }
+
+  .content p g{
+    font-size: 30px;
+    line-height: 50px;
+    left: 50px;
+  }
+
+  .content p a{
+    font-size: 40px;
+    line-height: 50px;
+    left: 50px;
+
+  }
+
+  .html-pic{
+    left: 100px;
+    top: 104%;
+    width: 22%;
+  }
+
+  .css-pic{
+    top: 103%;
+    width: 31%;
+    left: 670px;
+
+  }
+
+  .htmlcode-pic{
+    width: 25%;
+    top: 105%;
+    left: 400px;
+
+  }
+
+  .content h2{
+    left: 2%;
+  }
+
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+
+  .banner{
+    height: 170vh;
   }
 }
