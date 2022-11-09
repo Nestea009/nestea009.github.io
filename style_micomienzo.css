@@ -79,7 +79,7 @@ position: relative;
 font-size: 20px;
 margin:5px;
 text-align: left;
-animation: fade 1.5s;
+animation: fade_text 1.5s;
 }
 
 .html-pic{
@@ -135,14 +135,69 @@ animation: fade 1.5s;
   }
 }
 
+@keyframes fade_text{
+  from{
+  opacity:0;  
+  }
+  
+  to{
+  opacity: 1; 
+  }
+}
+
 @media (orientation: portrait) {
     
+  @keyframes fade{
+    from{
+    opacity:0;  
+    }
+    
+    to{
+    opacity: 0; 
+    }
+  }
+
+  #rectangle1{
+    opacity: 0;
+  }
+
   .logo{
     width: 25%;
   }
 
+  .webhostapp-pic{
+    opacity: 0;
+  }
+
+  .wix-pic{
+    opacity: 0;
+  }
+
+  .html-pic{
+    opacity: 0;
+  }
+
+  .css-pic{
+    opacity: 0;
+
+  }
+
+  .content h2{
+    font-size: 70px;
+  }
+
+  .content p{
+    left: 50px;
+    font-size: 45px;
+    line-height: 50px;
+  }
+
   .navbar{
     font-size: 29px;
+  }
+
+  .banner{
+    height: 270vh;
   }
 
 }
