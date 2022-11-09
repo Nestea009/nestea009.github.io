@@ -85,7 +85,7 @@ animation: fade 1.5s;
 .python-pic{
 width: 16%;
 position: absolute;
-top: 45%;
+top: 23%;
 left:8%;
 animation: fade-pics-left 2s;
 }
@@ -93,7 +93,7 @@ animation: fade-pics-left 2s;
 .calculadora-pic{
   width: 30%;
   position: absolute;
-  top: 85%;
+  top: 43%;
   left:68%;
   animation: fade-pics-right 2s; 
   
@@ -103,7 +103,7 @@ animation: fade-pics-left 2s;
 width:300px;
 position: absolute;
 background: white;
-top: 135%;
+top: 73%;
 left:8%;
 animation: fade-pics-left 2s;
 }
@@ -142,12 +142,12 @@ animation: fade-pics-left 2s;
 @keyframes fade-pics-right{
   from{
     opacity:0;
-    top: 160%;
+    top: 90%;
   }
 
     to{
     opacity: 1;
-    top: 85%;
+    top: 43%;
   }
 }
 
