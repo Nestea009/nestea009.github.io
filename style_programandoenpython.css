@@ -72,7 +72,7 @@
 
 .content p{
 width: 90%;
-top: 18px;
+top: 1%;
 left: 50px;
 line-height: 27px;
 position: relative;
@@ -153,6 +153,23 @@ animation: fade-pics-left 2s;
 
 @media (orientation: portrait) {
     
+  @keyframes fade-pics-left{
+  }
+
+  @keyframes fade-pics-right{
+
+  }
+  .content h2{
+    font-size: 70px;
+    left: 0px;
+
+  }
+
+  .content p{
+    font-size: 40px;
+    line-height: 50px;
+  }
+
   .logo{
     width: 25%;
   }
@@ -160,5 +177,34 @@ animation: fade-pics-left 2s;
   .navbar{
     font-size: 29px;
   }
+
+  #rectangle1{
+    top: 102%;
+    
+    
+  }
+
+  .python-pic{
+    top: 108%;
+    left: 12%;
+    width: 20%;
+    
+  }
+  .calculadora-pic{
+    top: 102%;
+    left: 425px;
+    width: 50%;
+  }
+  
+  .content{
+    top: 15%;
+
+  }
+
+  .banner{
+    height: 225vh;
+  }
+
+
 
 }
