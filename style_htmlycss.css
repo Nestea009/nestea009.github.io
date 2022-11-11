@@ -101,10 +101,10 @@ font-size: 25px;
 }
 
 .css-pic{
-  width: 26%;
+  width: 16%;
   position: absolute;
   top: 600px;
-  left: 1100px;
+  left: 1200px;
   animation: fade-pics-right 2s; 
     
 }
@@ -145,7 +145,7 @@ font-size: 25px;
 @keyframes fade-pics-right{
   from{
     opacity:0;
-    left: 200%;
+    left: 83%;
   }
 
     to{
@@ -192,8 +192,8 @@ font-size: 25px;
   }
 
   .css-pic{
-    top: 103%;
-    width: 31%;
+    top: 104%;
+    width: 21%;
     left: 670px;
 
   }
@@ -201,7 +201,7 @@ font-size: 25px;
   .htmlcode-pic{
     width: 25%;
     top: 105%;
-    left: 400px;
+    left: 375px;
 
   }
 

@@ -164,7 +164,7 @@ left: 55%;
   @keyframes fade1{
     from{
     opacity:0;
-    left: 67%;
+    left: 64%;
     }
     
     to{
@@ -176,7 +176,7 @@ left: 55%;
     @keyframes fade2{
       from{
       opacity:0;
-      left: 56%;
+      left: 53%;
       }
       
       to{
@@ -235,12 +235,12 @@ left: 55%;
     text-align: center; 
     margin: 20px 10px;
     border-radius: 25px; 
-    font-weight: bold;
+    font-weight: 600;
     border: 0px solid #009688;
     background: transparent;
     cursor: pointer; 
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 40px;
     color:#fff;
     position: relative; 
     overflow: hidden; 

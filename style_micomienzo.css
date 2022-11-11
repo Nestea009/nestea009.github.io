@@ -86,7 +86,7 @@ animation: fade_text 1.5s;
   width: 13%;
   position: absolute; 
   left: 65%;  
-  top: 37%;
+  top: 16%;
   animation: fade 1.5s;
   
 }
@@ -94,7 +94,7 @@ animation: fade_text 1.5s;
 .webhostapp-pic{
 width: 13%;
 position: absolute; 
-top: 80%;
+top: 40%;
 left: 65%;  
 animation: fade 1.5s;
 }
@@ -107,9 +107,9 @@ animation: fade 1.5s;
 }
 
 .css-pic{
-  width: 16%;
+  width: 10%;
   position: absolute; 
-  top: 160%;
+  top: 84%;
   left: 65%;  
   animation: fade 1.5s;
 }
@@ -119,7 +119,7 @@ animation: fade 1.5s;
   height:100px;
   background: grey; 
   position:absolute;
-  top: 123%;
+  top: 63%;
   left:65%;
   animation: fade 1.5s;
 
@@ -148,17 +148,12 @@ animation: fade 1.5s;
 @media (orientation: portrait) {
     
   @keyframes fade{
-    from{
-    opacity:0;  
-    }
-    
-    to{
-    opacity: 0; 
-    }
+
   }
 
   #rectangle1{
     opacity: 0;
+    top:50%;
   }
 
   .logo{
@@ -167,19 +162,22 @@ animation: fade 1.5s;
 
   .webhostapp-pic{
     opacity: 0;
+    top: 50%;
   }
 
   .wix-pic{
     opacity: 0;
+    top: 50%;
   }
 
   .html-pic{
     opacity: 0;
+    top: 50%;
   }
 
   .css-pic{
     opacity: 0;
-
+    top: 50%;
   }
 
   .content h2{
@@ -189,7 +187,7 @@ animation: fade 1.5s;
   .content p{
     left: 50px;
     font-size: 45px;
-    line-height: 50px;
+    line-height: 60px;
   }
 
   .navbar{
@@ -197,7 +195,7 @@ animation: fade 1.5s;
   }
 
   .banner{
-    height: 270vh;
+    height: 300vh;
   }
 
 }

@@ -171,7 +171,7 @@ button:hover{
 @keyframes fade{
   from{
   opacity:0;
-  top: 70%;
+  top: 68%;
   
   }
   
@@ -217,12 +217,12 @@ button:hover{
     }
 
     button{
-      font-size: 35px;
+      font-size: 40px;
       width: 550px;
-      height: 110px;
+      height: 120px;
       font-weight: bold;
       margin: 50px 15px;
-      border-radius: 45px;
+      border-radius: 60px;
     }
 
     .content h2{
