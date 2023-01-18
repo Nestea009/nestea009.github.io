@@ -88,7 +88,7 @@ button{
 }
 
 span{
-  background: #009688;
+  background: #353535;
   height: 100%; 
   width: 100%; 
   border-radius: 25px; 
@@ -102,7 +102,8 @@ span{
 
 button:hover span{
   width: 100%;
-  opacity: 100%
+  opacity: 100%;
+  background: #009688;
 }
 
 button:hover{

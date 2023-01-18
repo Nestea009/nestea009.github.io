@@ -57,7 +57,6 @@
 }
 
 .content{
-  color: #fff;
   position: absolute;
   width: 100%;
   top: 20%; 
@@ -71,25 +70,55 @@
   color: #009688;
 }
 
-.posts{
-  color: #fff;
+.blogs-title{
+  width: 500px;
+  height: 100px;
+  left: 40%;
   position: absolute;
-  width: 100%;
-  top: 55%; 
-  left: 0%;
-  transform: translateY(-50%);
-  text-align: center;
-  animation: fade 1.2s; 
+  color: transparent;
 }
 
-.posts ul li a{
+.blogs-title h2{
+  position: relative;
+  top: -2%;
+  left: 66%;
+
+}
+
+.proyectos-title{
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  color: transparent;
+
+}
+
+.proyectos-title h2{
+  position: relative;
+  top: -2;
+  left: 45%;
+  
+}
+
+.blogs {
+  color: #fff;
+  position: absolute;
+  width: 40%;
+  top: 60%; 
+  left: 60%;
+  transform: translateY(-50%);
+  text-align: center;
+  animation: fade-blogs 1.2s; 
+}
+
+.blogs ul li a{
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   
 }
 
-.posts ul li{
+.blogs ul li{
 font-size: 30px;
 color: #fff;
 text-transform: uppercase; 
@@ -126,7 +155,7 @@ button{
 }
 
 span{
-  background: #009688;
+  background: #353535;
   height: 100%; 
   width: 100%; 
   border-radius: 25px; 
@@ -141,16 +170,12 @@ span{
 
 button:hover span{
   width: 100%;
-  opacity: 100%
+  opacity: 100%;
+  background: #009688;
 }
 
 button:hover{
   border: none; 
-}
-
-.posts h1{
-  font-size: large; 
-  color: #fff;
 }
 
 .programandoenpython-pic{
@@ -160,6 +185,7 @@ button:hover{
   top: 50px; 
 
 }
+
 .htmlycss-pic{
   width: 90px;
   position: relative;
@@ -168,69 +194,162 @@ button:hover{
 
 }
 
-@keyframes fade{
+.division{
+  width: 40px;
+  height: 420px;
+  position: absolute;
+  background: #2b2b2b;
+  top: 35%;
+  left: 60%;  
+  border-radius: 20px;
+}
+
+.posts{
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 65%;
+  left: 5%;
+  transform: translateY(-50%);
+  animation: fade-posts 1.4s;
+}
+
+.button1{
+  position: relative;
+  width: 240px;
+  height: 177px;
+}
+
+.miweb img{
+  height:110px;
+  width: 110px;
+  position: relative;
+}
+
+.miweb{
+  width: min-content;
+  height: min-content;
+  position: relative;
+  top: 0%;
+  left: 29%;
+  color: transparent;
+}
+
+.miweb h1{
+  position: relative; 
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  top: 10%;
+}
+
+.fiverr {
+  position: relative;
+  width:min-content;
+  height: min-content;
+  top: 0%;
+  left: -29%;
+  color: transparent;
+}
+
+.button2 {
+  position: relative;
+  width: 240px;
+  height: 177px;
+
+}
+
+.fiverr img{
+  height:110px;
+  width: 110px;
+  position: relative;
+}
+
+.fiverr h1{
+  position: relative; 
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  top: 10%;
+}
+
+@keyframes fade-blogs{
   from{
   opacity:0;
-  top: 68%;
+  top: 70%;
   
   }
   
   to{
   opacity: 1;
-  top:55%;
+  top: 60%;
 
   }
-  }
+}
 
-  @media (orientation: portrait) {
+@keyframes fade-posts{
+  from{
+    opacity:0;
+    top: 70%;
     
-    .logo{
-      width: 25%;
+    }
+    
+    to{
+    opacity: 1;
+    top: 65%;
+  
     }
 
-    .navbar{
-      font-size: 29px;
-    }
+}
 
-    @keyframes fade {
-      from{
-        opacity:0;
-        top: 70%;
-        
-        }
-        
-        to{
-        opacity: 1;
-        top:49%;
-      
-        }
-    }
 
-    .content{
-      top: 22%;
+  
 
-    }
-
-    .posts{
-      top: 49%;
-      
-    }
-
-    button{
-      font-size: 40px;
-      width: 550px;
-      height: 120px;
-      font-weight: bold;
-      margin: 50px 15px;
-      border-radius: 60px;
-    }
-
-    .content h2{
-      font-size: 85px;
-
-    }
-
-    .posts h1{
-      font-size: 40px;
-    }
+@media (orientation: portrait) {
+  
+  .logo{
+    width: 25%;
   }
+
+  .navbar{
+    font-size: 29px;
+  }
+
+  @keyframes fade {
+    from{
+      opacity:0;
+      top: 70%;
+        
+    }
+        
+      to{
+      opacity: 1;
+      top:49%;
+      
+      }
+  }
+
+  .content{
+    top: 22%;
+
+  }
+
+  .blogs{
+    top: 49%;
+      
+  }
+
+  button{
+    font-size: 40px;
+    width: 550px;
+    height: 120px;
+    font-weight: bold;
+    margin: 50px 15px;
+    border-radius: 60px;
+  }
+
+  .content h2{
+    font-size: 85px;
+
+  }
+}

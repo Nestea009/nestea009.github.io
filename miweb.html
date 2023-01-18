@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Mi Web | N</title>
+    <link rel="stylesheet" href="style_miweb.css">
+    <link rel="icon" type="image/png" href="N_Logo_Transparent.png"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img size="10%" src="N-Logo-Mini.png" class="logo" href="Sobre-mi.html">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Blogs.html">Proyectos</a></li>
+          <li><a href="Sobre-mi.html">Sobre Mí</a></li>
+        </ul>
+      </div>
+    </div>
+    <ul class="content">
+      <h2>Mi Web</h2>
+    </ul>
+        <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="Imgs/MiWeb/miweb2.png" class="miweb2"></div>
+        <div class="swiper-slide"><img src="Imgs/MiWeb/miweb3.png" class="miweb3"></div>
+        <div class="swiper-slide"><img src="Imgs/MiWeb/miweb4.png" class="miweb4"></div>
+        <div class="swiper-slide"><img src="Imgs/MiWeb/miweb5.png" class="miweb5"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+    
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+    });
+    </script>
+  </body>
+</html>
