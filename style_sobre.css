@@ -229,15 +229,18 @@
   }
 
   .content h2{
+    position: absolute;
+    top: 22%;
     font-size: 100px;
   }
 
   .content p{
     position: absolute;
     top: 52%;
-    left: 20%;
+    left: 10%;
     font-size: 43px;
-    width: 600px;
+    width: 800px;
+    line-height: 53px;
   }
 
   .rustimg{
@@ -248,7 +251,7 @@
   }
   .rust a h1{
     top: 83%;
-    left: 8%;
+    left: 10%;
     font-weight: bold;
     font-size: 40px;
   }

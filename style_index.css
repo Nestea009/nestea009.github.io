@@ -129,7 +129,7 @@ button:hover{
 }
 
 .logo_p{
-position: relative;
+  position: relative;
   width: 30%;
   height: 30%;
 }
@@ -151,26 +151,26 @@ left: 36%;
   @keyframes fade1{
     from{
     opacity:0;
-    left: 64%;
+    top: 20%;
     }
     
     to{
     opacity: 1;
-    left: 57%;
+    top: -25%;
     }
+  }
+
+  @keyframes fade2{
+    from{
+    opacity:0;
+    top: 65%;
     }
     
-    @keyframes fade2{
-      from{
-      opacity:0;
-      left: 53%;
-      }
-      
-      to{
-      opacity: 1;
-      left: 46%;
-      }
+    to{
+    opacity: 1;
+    top: 10%;
     }
+  }
 
   .logo{
     width: 25%;
@@ -181,6 +181,7 @@ left: 36%;
   }
 
   .content{
+    position: absolute;
     top: 70%;
 
   }
@@ -191,29 +192,19 @@ left: 36%;
     font-weight: bold;
     line-height: 50px; 
     position: absolute;
-    top:-150%;
+    top: 10%;
     left: 5%;
+    animation: fade2 2.5s;
     }
 
   .content h1{
     font-size: 100px;
     margin: 25px;
-    color:#ffffff;
+    color:#009688;
     animation: fade1 2s;
     position: absolute;
-    top: -510%;
-    left: 57%;
-  }
-
-  .content a h1{
-    font-size: 100px;
-    margin: 25px;
-    color:#ffffff;
-    animation: fade2 2s;
-    position: absolute;
-    top: -380%;
-    left: 46%;
-
+    top: -25%;
+    left: 10%;
   }
 
   button{
@@ -235,10 +226,10 @@ left: 36%;
   }
 
   .logo_p{
-    position: absolute; 
-    top:-750%;
-    left: 5%;
-    width: 65%
+    position: relative;
+    top: -700px;
+    width: 65%;
+    height: 65%;
   }
 
 }

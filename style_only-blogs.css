@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Renogare;
+  src: url(Renogare-Regular.otf);
+  font-weight: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Renogare;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(backgroundimg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.erase-later{
+  color: #009688;
+  font-size: 40px;
+  top: 50%;
+  left: 30%;
+  position: absolute;
+  opacity: 1;
+
+}
+
+.logo{
+  width: 90px;
+  cursor: pointer; 
+}
+
+.navbar{
+  width: 85%;
+  margin: auto; 
+  padding: 35px 0;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; 
+  position: relative; 
+  
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s; 
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+@media (orientation: portrait) {
+  
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+}

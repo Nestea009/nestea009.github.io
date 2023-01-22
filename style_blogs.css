@@ -18,6 +18,16 @@
   background-position: center;
 }
 
+.blog-button{
+  color: #009688;
+  font-size: 40px;
+  top: 100%;
+  left: 33%;
+  position: absolute;
+  opacity: 0;
+
+}
+
 .logo{
   width: 90px;
   cursor: pointer; 
@@ -116,13 +126,6 @@
   transform: translateY(-50%);
   text-align: center;
   animation: fade-blogs 1.2s; 
-}
-
-.blogs ul li a{
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  
 }
 
 .blogs ul li{
@@ -309,9 +312,6 @@ button:hover{
 
 }
 
-
-  
-
 @media (orientation: portrait) {
   
   .logo{
@@ -325,15 +325,20 @@ button:hover{
   @keyframes fade {
     from{
       opacity:0;
-      top: 70%;
+      top: 60%;
         
     }
         
       to{
       opacity: 1;
-      top:49%;
+      top: 55%;
       
       }
+  }
+
+  .banner{
+    height: 120vh;
+
   }
 
   .content{
@@ -357,6 +362,91 @@ button:hover{
 
   .content h2{
     font-size: 85px;
+    top: -150%;
+  }
+
+  .blogs{
+    position: absolute;
+    opacity: 0;
+    top: 0%;
+    left: 0%;
+    animation: none;
+  }
+
+  .blogs-title{
+    position: absolute;
+    opacity: 0;
+    top: 0%;
+    left: 0%;
+  }
+
+  .division{
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+
+  .posts{
+    position: absolute;
+    top: 55%;
+    animation: fade 1.2s;
+  }
+
+  .miweb{
+    width: min-content;
+    height: min-content;
+    position: relative;
+    top: 0%;
+    left: 29%;
+    color: transparent;
+    animation: none;
+  }
+
+  .miweb img{
+    width: 70%;
+    height: 70%;
 
   }
+
+  .miweb h1{
+    top: -5%;
+    font-size: 65px;
+
+  }
+
+  .fiverr img{
+    width: 60%;
+    height: 60%;
+
+  }
+
+  .fiverr h1{
+    top: 8%;
+    font-size: 65px;
+
+  }
+
+  .button2{
+    width: 100%;
+    height: 50%;
+    left: -10%;
+  }
+
+  .fiverr {
+    position: relative;
+    width:min-content;
+    height: min-content;
+    top: 0%;
+    left: 29%;
+    color: transparent;
+    animation: none;
+  }
+
+  .button1{
+    width: 100%;
+    height: 50%;
+    left: -10%;
+  }
+  
 }
