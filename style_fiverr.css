@@ -165,3 +165,14 @@ button:hover img{
   width: 80%;
   
 }
+
+@media (orientation: portrait) {
+  
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+}
