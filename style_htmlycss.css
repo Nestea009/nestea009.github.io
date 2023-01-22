@@ -73,7 +73,7 @@
   position:relative;
   margin: 50px;
   color: #009688;
- 
+  font-weight: 100;
 }
 
 .content p{
@@ -116,10 +116,10 @@ font-size: 25px;
 }
 
 .htmlcode-pic{
-  width: 27%;
+  width: 25%;
   position: absolute;
   top: 1000px;
-  left: 30px;
+  left: 25px;
   animation: fade-pics-left 2s;
 }
 

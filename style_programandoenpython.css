@@ -74,6 +74,7 @@
   left:-25px;
   margin: 50px;
   color: #009688;
+  font-weight: 100;
 }
 
 .content p{
@@ -97,10 +98,10 @@ animation: fade-pics-left 2s;
 }
 
 .calculadora-pic{
-  width: 30%;
+  width: 27%;
   position: absolute;
   top: 43%;
-  left:68%;
+  left:72%;
   animation: fade-pics-right 2s; 
   
 }
