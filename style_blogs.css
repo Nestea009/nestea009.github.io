@@ -1,7 +1,13 @@
+@font-face {
+  font-family: Renogare;
+  src: url(Renogare-Regular.otf);
+  font-weight: normal;
+}
+
 *{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Renogare;
 }
 
 .banner{
@@ -68,6 +74,7 @@
   font-size: 60px;
   margin: 20px;
   color: #009688;
+  font-weight: 100;
 }
 
 .blogs-title{
@@ -142,7 +149,7 @@ button{
   text-align: center; 
   margin: 20px 10px;
   border-radius: 25px; 
-  font-weight: bold;
+  font-weight: 100;
   border: 0px solid #009688;
   background: transparent;
   cursor: pointer; 
@@ -238,7 +245,7 @@ button:hover{
 .miweb h1{
   position: relative; 
   font-size: large;
-  font-weight: bold;
+  font-weight: 100;
   color: #ffffff;
   top: 10%;
 }
@@ -268,7 +275,7 @@ button:hover{
 .fiverr h1{
   position: relative; 
   font-size: large;
-  font-weight: bold;
+  font-weight: 100;
   color: #ffffff;
   top: 10%;
 }
