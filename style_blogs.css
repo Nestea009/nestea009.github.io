@@ -73,55 +73,11 @@
   width: 100%;
 }
 
-.content{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  top: 20%; 
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-.content h2{
-  font-size: 60px;
-  margin: 20px;
-  color: #009688;
-  font-weight: 100;
-}
-
-.blogs-title{
-  width: 500px;
-  height: 100px;
-  left: 40%;
-  position: absolute;
-  color: transparent;
-}
-
-.blogs-title h2{
-  position: relative;
-  top: -2%;
-  left: 66%;
-
-}
-
-.proyectos-title{
-  width: 500px;
-  height: 100px;
-  position: absolute;
-  color: transparent;
-
-}
-
-.proyectos-title h2{
-  position: relative;
-  top: -2;
-  left: 45%;
-  
-}
-
 .blogs {
   color: #fff;
   position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 40%;
   top: 60%; 
   left: 60%;
@@ -130,15 +86,32 @@
   animation: fade-blogs 1.2s; 
 }
 
-.blogs ul li{
+.blogs-title{
+  width: 500px;
+  height: 100px;
+  left: 40%;
+  display: flex;
+  color: transparent;
+}
+
+.blogs-title h2{
+  position: relative;
+  font-size: 60px;
+  margin: 20px;
+  color: #009688;
+  font-weight: 100;
+  left: 40%;
+}
+
+.actual-blogs{
   font-size: 30px;
   color: #fff;
   text-transform: uppercase; 
   width: 100%;
   list-style: none;
-  display: inline-block;
   margin: 20px 0px; 
   position: relative; 
+
 }
 
 .micomienzo-pic{
@@ -219,14 +192,40 @@ button:hover{
 .posts{
   position: absolute;
   display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  width: 53%;
-  height: 60%;
-  top: 65%;
+  width: 50%;
+  height: 45%;
+  top: 47%; 
   left: 5%;
   transform: translateY(-50%);
+  flex-direction: column;
+  justify-content:safe;
+}
+
+.proyectos-title{
+  width: 500px;
+  height: 100px;
+  display: flex;
+  position: relative;
+  color: transparent;
+
+}
+
+.proyectos-title h2{
+  position: relative;
+  left: 50%;
+  font-size: 60px;
+  margin: 20px;
+  color: #009688;
+  font-weight: 100;
+
+}
+
+.actual-posts{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
   animation: fade-posts 1.4s;
+
 }
 
 .button1{
