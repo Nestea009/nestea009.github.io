@@ -25,6 +25,7 @@
   left: 33%;
   position: absolute;
   opacity: 0;
+  display: none;
 
 }
 
@@ -74,6 +75,7 @@
 
 .content{
   position: absolute;
+  display: flex;
   width: 100%;
   top: 20%; 
   transform: translateY(-50%);
@@ -129,14 +131,14 @@
 }
 
 .blogs ul li{
-font-size: 30px;
-color: #fff;
-text-transform: uppercase; 
-width: 100%;
-list-style: none;
-display: inline-block;
-margin: 20px 0px; 
-position: relative; 
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase; 
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+  margin: 20px 0px; 
+  position: relative; 
 }
 
 .micomienzo-pic{
@@ -216,7 +218,10 @@ button:hover{
 
 .posts{
   position: absolute;
-  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  width: 53%;
   height: 60%;
   top: 65%;
   left: 5%;
@@ -225,23 +230,20 @@ button:hover{
 }
 
 .button1{
-  position: relative;
-  width: 240px;
-  height: 177px;
+  width: 100%;
+  height: 100%;
 }
 
 .miweb img{
-  height:110px;
+  height: 110px;
   width: 110px;
   position: relative;
 }
 
 .miweb{
-  width: min-content;
-  height: min-content;
+  width: 240px;
+  height: 177px;
   position: relative;
-  top: 0%;
-  left: 29%;
   color: transparent;
 }
 
@@ -255,18 +257,9 @@ button:hover{
 
 .fiverr {
   position: relative;
-  width:min-content;
-  height: min-content;
-  top: 0%;
-  left: -29%;
-  color: transparent;
-}
-
-.button2 {
-  position: relative;
   width: 240px;
   height: 177px;
-
+  color: transparent;
 }
 
 .fiverr img{
@@ -347,7 +340,7 @@ button:hover{
   }
 
   .blogs{
-    top: 49%;
+    display: none;
       
   }
 
@@ -366,41 +359,36 @@ button:hover{
   }
 
   .blogs{
-    position: absolute;
-    opacity: 0;
-    top: 0%;
-    left: 0%;
-    animation: none;
+    display: none;
   }
 
   .blogs-title{
-    position: absolute;
-    opacity: 0;
-    top: 0%;
-    left: 0%;
+    display: none;
   }
 
   .division{
-    opacity: 0;
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    display: none;
   }
 
   .posts{
     position: absolute;
-    top: 55%;
-    animation: fade 1.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 80%;
+    height: 80%;
+    top: 65%;
+    left: 18%;
+    transform: translateY(-50%);
+    animation: fade-posts 1.4s;
   }
 
   .miweb{
-    width: min-content;
-    height: min-content;
+    width: 70%;
+    height: 40%;
     position: relative;
-    top: 0%;
-    left: 29%;
     color: transparent;
-    animation: none;
   }
 
   .miweb img{
@@ -427,26 +415,12 @@ button:hover{
 
   }
 
-  .button2{
-    width: 100%;
-    height: 50%;
-    left: -10%;
-  }
-
+  
   .fiverr {
+    width: 70%;
+    height: 40%;
     position: relative;
-    width:min-content;
-    height: min-content;
-    top: 0%;
-    left: 29%;
     color: transparent;
-    animation: none;
-  }
-
-  .button1{
-    width: 100%;
-    height: 50%;
-    left: -10%;
   }
   
 }
