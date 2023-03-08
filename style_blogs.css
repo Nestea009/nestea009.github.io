@@ -333,11 +333,6 @@ button:hover{
 
   }
 
-  .content{
-    top: 22%;
-
-  }
-
   .blogs{
     display: none;
       
@@ -350,11 +345,6 @@ button:hover{
     font-weight: bold;
     margin: 50px 15px;
     border-radius: 60px;
-  }
-
-  .content h2{
-    font-size: 85px;
-    top: -150%;
   }
 
   .blogs{
@@ -372,20 +362,36 @@ button:hover{
   .posts{
     position: absolute;
     display: flex;
+    transform: translateY(-50%);
+    flex-direction: column;
+    justify-content:space-between;
+  
+  }
+
+  .proyectos-title h2{
+    position: relative;
+    top: -100%;
+    left: 30%;
+    font-size: 90px;
+  }
+
+  .actual-posts{
+    position: absolute;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: baseline;
-    width: 80%;
-    height: 80%;
-    top: 65%;
-    left: 18%;
+    width: 100%;
+    height: 150%;
+    top: 80%;
+    left: 33%;
     transform: translateY(-50%);
     animation: fade-posts 1.4s;
   }
 
   .miweb{
-    width: 70%;
-    height: 40%;
+    width: 100%;
+    height: 43%;
     position: relative;
     color: transparent;
   }
@@ -395,6 +401,7 @@ button:hover{
     height: 70%;
 
   }
+
 
   .miweb h1{
     top: -5%;
@@ -416,8 +423,8 @@ button:hover{
 
   
   .fiverr {
-    width: 70%;
-    height: 40%;
+    width: 100%;
+    height: 43%;
     position: relative;
     color: transparent;
   }
