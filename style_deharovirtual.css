@@ -1,0 +1,231 @@
+@font-face {
+  font-family: Renogare;
+  src: url(Renogare-Regular.otf);
+  font-weight: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Renogare;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(backgroundimg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo{
+  width: 90px;
+  cursor: pointer; 
+}
+
+.navbar{
+  width: 85%;
+  margin: auto; 
+  padding: 35px 0;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; 
+  position: relative; 
+  
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s; 
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  top: 20%; 
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.content h2{
+  font-size: 60px;
+  margin: 20px;
+  color: #009688;
+  font-weight: 100;
+}
+
+.arrows{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  height: 100px;
+  width: 500px;
+}
+
+.left-arrow{
+  position: relative;
+  background: transparent;
+  border: transparent;
+  width:500px;
+  left: -78%;
+}
+
+.left-arrow img{
+  position: relative;
+  transition: 0.5s;
+  width:20%;
+  opacity: 25%;
+}
+
+.right-arrow img{
+  position: relative;
+  transition: 0.5s;
+  width:20%;
+  top: 200%;
+  left: 70%;
+  opacity: 25%;
+}
+
+button:hover img{
+  opacity: 150%;
+
+}
+
+.right-arrow{
+  position: relative;
+  width:500px;
+  background: transparent;
+  border: transparent;
+  top: -100%
+}
+
+.swiper{
+  position: absolute;
+  width: 80%;
+  height: 65%;
+  top: -70%;
+}
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fiverr1{
+  height: 100%;
+  width: 80%;
+  
+}
+
+.fiverr2{
+  height: 100%;
+  width: 80%;
+  
+}
+
+.fiverr3{
+  height: 100%;
+  width: 65%;
+  
+}
+
+.fiverr4{
+  height: 100%;
+  width: 65%;
+  
+}
+
+.fiverr5{
+  height: 100%;
+  width: 80%;
+  
+}
+
+#slider {
+  position: absolute;
+  top: 30%;
+  left: 18%;
+  width: 60%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+	overflow: hidden;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+@media (orientation: portrait) {
+  
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+}

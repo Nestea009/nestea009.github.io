@@ -225,7 +225,6 @@ button:hover{
   justify-content: space-evenly;
   align-items: baseline;
   animation: fade-posts 1.4s;
-
 }
 
 .button1{
@@ -275,6 +274,27 @@ button:hover{
   top: 10%;
 }
 
+.deharovirtual{
+  width: 240px;
+  height: 177px;
+  position: relative;
+  color: transparent;
+}
+
+.deharovirtual h1{
+  position: relative; 
+  font-size: large;
+  font-weight: 100;
+  color: #ffffff;
+  top: 10%;
+}
+
+.deharovirtual img{
+  height: 110px;
+  width: 110px;
+  position: relative;
+}
+
 @keyframes fade-blogs{
   from{
   opacity:0;
@@ -314,28 +334,26 @@ button:hover{
     font-size: 29px;
   }
 
-  @keyframes fade {
+  @keyframes fade-posts {
     from{
       opacity:0;
-      top: 60%;
+      top: 120%;
         
     }
         
       to{
       opacity: 1;
-      top: 55%;
+      top: 100%;
       
       }
   }
 
   .banner{
-    height: 120vh;
-
+    height: 150vh;
   }
 
   .blogs{
-    display: none;
-      
+    display: none;  
   }
 
   button{
@@ -343,7 +361,7 @@ button:hover{
     width: 550px;
     height: 120px;
     font-weight: bold;
-    margin: 50px 15px;
+    margin: 250px 15px;
     border-radius: 60px;
   }
 
@@ -365,7 +383,6 @@ button:hover{
     transform: translateY(-50%);
     flex-direction: column;
     justify-content:space-between;
-  
   }
 
   .proyectos-title h2{
@@ -383,7 +400,7 @@ button:hover{
     align-items: baseline;
     width: 100%;
     height: 150%;
-    top: 80%;
+    top: 100%;
     left: 33%;
     transform: translateY(-50%);
     animation: fade-posts 1.4s;
@@ -399,9 +416,7 @@ button:hover{
   .miweb img{
     width: 70%;
     height: 70%;
-
   }
-
 
   .miweb h1{
     top: -5%;
@@ -421,12 +436,32 @@ button:hover{
 
   }
 
-  
   .fiverr {
     width: 100%;
     height: 43%;
     position: relative;
     color: transparent;
+    margin: 50 0px;
+  }
+
+  .deharovirtual{
+    width: 100%;
+    height: 43%;
+    position: relative;
+    color: transparent;
+  }
+
+  .deharovirtual img{
+    width: 70%;
+    height: 70%;
+
+  }
+
+
+  .deharovirtual h1{
+    top: -5%;
+    font-size: 45px;
+
   }
   
 }
