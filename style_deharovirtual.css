@@ -12,7 +12,7 @@
 
 .banner{
   width: 100%;
-  height: 100vh;
+  height: 300vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(backgroundimg.png);
   background-size: cover;
   background-position: center;
@@ -65,7 +65,7 @@
 .content{
   position: absolute;
   width: 100%;
-  top: 20%; 
+  top: 110%;
   transform: translateY(-50%);
   text-align: center;
 }
@@ -75,51 +75,6 @@
   margin: 20px;
   color: #009688;
   font-weight: 100;
-}
-
-.arrows{
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  height: 100px;
-  width: 500px;
-}
-
-.left-arrow{
-  position: relative;
-  background: transparent;
-  border: transparent;
-  width:500px;
-  left: -78%;
-}
-
-.left-arrow img{
-  position: relative;
-  transition: 0.5s;
-  width:20%;
-  opacity: 25%;
-}
-
-.right-arrow img{
-  position: relative;
-  transition: 0.5s;
-  width:20%;
-  top: 200%;
-  left: 70%;
-  opacity: 25%;
-}
-
-button:hover img{
-  opacity: 150%;
-
-}
-
-.right-arrow{
-  position: relative;
-  width:500px;
-  background: transparent;
-  border: transparent;
-  top: -100%
 }
 
 .swiper{
@@ -136,39 +91,9 @@ button:hover img{
 
 }
 
-.fiverr1{
-  height: 100%;
-  width: 80%;
-  
-}
-
-.fiverr2{
-  height: 100%;
-  width: 80%;
-  
-}
-
-.fiverr3{
-  height: 100%;
-  width: 65%;
-  
-}
-
-.fiverr4{
-  height: 100%;
-  width: 65%;
-  
-}
-
-.fiverr5{
-  height: 100%;
-  width: 80%;
-  
-}
-
-#slider {
+.slider {
   position: absolute;
-  top: 30%;
+  top: 12%;
   left: 18%;
   width: 60%;
   height: 60%;
@@ -177,16 +102,45 @@ button:hover img{
 	overflow: hidden;
 }
 
-#slider figure {
+.slider figure {
 	position: relative;
 	width: 500%;
 	margin: 0;
 	left: 0;
 	animation: 20s slider infinite;
 }
-#slider figure img {
+
+.slider figure img {
 	float: left;
 	width: 20%;
+}
+
+.content p{
+  position: relative;
+  color: white;
+  top: 550px;
+
+}
+
+.content p h{
+  font-size: 40px;
+  color: #009688;
+  font-style: oblique;
+
+}
+
+.content p a{
+  position: relative;
+  color: white;
+
+}
+
+.content p b{
+  font-size: 30px;
+  color: #009688;
+  font-weight: 300;
+  font-style: oblique;
+  
 }
 
 @keyframes slider {

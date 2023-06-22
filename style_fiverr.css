@@ -77,51 +77,6 @@
   font-weight: 100;
 }
 
-.arrows{
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  height: 100px;
-  width: 500px;
-}
-
-.left-arrow{
-  position: relative;
-  background: transparent;
-  border: transparent;
-  width:500px;
-  left: -78%;
-}
-
-.left-arrow img{
-  position: relative;
-  transition: 0.5s;
-  width:20%;
-  opacity: 25%;
-}
-
-.right-arrow img{
-  position: relative;
-  transition: 0.5s;
-  width:20%;
-  top: 200%;
-  left: 70%;
-  opacity: 25%;
-}
-
-button:hover img{
-  opacity: 150%;
-
-}
-
-.right-arrow{
-  position: relative;
-  width:500px;
-  background: transparent;
-  border: transparent;
-  top: -100%
-}
-
 .swiper{
   position: absolute;
   width: 80%;
