@@ -1,0 +1,256 @@
+@font-face {
+  font-family: Renogare;
+  src: url(Renogare-Regular.otf);
+  font-weight: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Renogare;
+}
+
+.banner{
+  width: 100%;
+  height: 280vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(backgroundimg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo{
+  width: 90px;
+  cursor: pointer; 
+}
+
+.navbar{
+  width: 85%;
+  margin: auto; 
+  padding: 35px 0;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; 
+  position: relative; 
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s; 
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.content{
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 12%; 
+  text-align: center;
+  animation: fade 1.5s;
+}
+
+.content h2{
+  font-size: 60px;
+  position:relative;
+  margin: 50px;
+  color: #009688;
+  font-weight: 100;
+}
+
+.content p{
+  width: 90%;
+  top: 0px;
+  left: 80px;
+  line-height: 27px;
+  position: relative;
+  font-size: 20px;
+  margin:5px;
+  text-align: center;
+
+}
+
+.content p a{
+  color: #009688; 
+}
+
+.content p g{
+  color: #54ac02ae; 
+}
+
+.content p m{
+  color: #ff9a27; 
+}
+
+.content p f{
+  color: #810404; 
+}
+
+
+.frameworks{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.framework{
+  position: relative;
+  margin-top: 20px;
+  margin-inline: 70px;
+  font-size: 30px;
+  animation: fade 1.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.framework-img{
+  position: relative;
+  width: 100px;
+
+}
+
+.react1-pic{
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  width: 250px;
+
+}
+
+.react2-pic{
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  width: 250px;
+
+}
+
+.react3-pic{
+  position: absolute;
+  top: 85%;
+  left: 6%;
+  width: 250px;
+
+}
+
+@keyframes fade{
+  from{
+  opacity:0;
+  top: 90px;
+  
+  }
+  
+  to{
+  opacity: 1;
+
+
+  }
+}
+
+@keyframes fade-pics-left{
+  from{
+    opacity:0;
+    left:0%;
+  }
+
+    to{
+    opacity: 1;
+  }
+}
+
+@keyframes fade-pics-right{
+  from{
+    opacity:0;
+    left: 83%;
+  }
+
+    to{
+    opacity: 1;
+  }
+}
+
+@media (orientation: portrait) {
+    
+  @keyframes fade{
+
+  }
+  
+  @keyframes fade-pics-left{
+
+  }
+  
+  @keyframes fade-pics-right{
+
+  }
+  .content p{
+    font-size: 30px;
+    line-height: 50px;
+    left: 50px;
+  }
+
+  .content p g{
+    font-size: 30px;
+    line-height: 50px;
+    left: 50px;
+  }
+
+  .content p a{
+    font-size: 40px;
+    line-height: 50px;
+    left: 50px;
+
+  }
+
+  .rust1-pic{
+    left: 130px;
+    top: 107%;
+    width: 30%;
+  }
+
+  .rust2-pic{
+    top: 107%;
+    width: 30%;
+    left: 550px;
+
+  }
+
+  .content h2{
+    left: 2%;
+  }
+
+  .logo{
+    width: 25%;
+  }
+
+  .navbar{
+    font-size: 29px;
+  }
+
+  .banner{
+    height: 170vh;
+  }
+}
