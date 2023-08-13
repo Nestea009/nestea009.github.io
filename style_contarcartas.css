@@ -91,6 +91,36 @@
 
 }
 
+.img1{
+  height: 100%;
+  width: 80%;
+  
+}
+
+.img2{
+  height: 100%;
+  width: 80%;
+  
+}
+
+.img3{
+  height: 100%;
+  width: 65%;
+  
+}
+
+.img4{
+  height: 100%;
+  width: 65%;
+  
+}
+
+.img5{
+  height: 100%;
+  width: 80%;
+  
+}
+
 #slider {
   position: absolute;
   top: 30%;

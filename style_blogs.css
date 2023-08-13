@@ -237,9 +237,7 @@ button:hover{
 
 .actual-posts{
   display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  animation: fade-posts 1.4s;
+  flex-direction: column;
 }
 
 .button1{
@@ -310,7 +308,46 @@ button:hover{
   position: relative;
 }
 
+.contarcartas{
+  width: 240px;
+  height: 177px;
+  position: relative;
+  color: transparent;
+}
 
+.contarcartas h1{
+  position: relative; 
+  font-size: large;
+  font-weight: 100;
+  color: #ffffff;
+  top: 10%;
+}
+
+.contarcartas img{
+  height:110px;
+  width: 110px;
+  position: relative;
+}
+
+.first-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  animation: fade-posts 1.4s;
+}
+.second-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  animation: fade-posts 1.4s;
+}
+
+a{
+  width: 240px;
+  height: 177px;
+}
 
 @keyframes fade-blogs{
   from{
