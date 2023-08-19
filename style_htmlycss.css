@@ -77,15 +77,15 @@
 }
 
 .content p{
-width: 90%;
-top: 0px;
-left: 80px;
-line-height: 27px;
-position: relative;
-font-size: 20px;
-margin:5px;
-text-align: center;
-animation: fade 1.5s;
+  width: 90%;
+  top: 0px;
+  left: 80px;
+  line-height: 27px;
+  position: relative;
+  font-size: 20px;
+  margin:5px;
+  text-align: center;
+  animation: fade 1.5s;
 }
 
 .content p a{
