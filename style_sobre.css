@@ -84,7 +84,7 @@
   color:#fff;
 }
 
-.rustimg{
+.cppimg{
   width: 6%;
   left: 18%;
   text-align: center;
@@ -94,8 +94,8 @@
   animation: fade 1s;
 }
 
-.rust a h1{
-  left: 12%;
+.cpp a h1{
+  left: 13%;
   text-align: center;
   position: absolute;
   top: 83%;
@@ -243,13 +243,7 @@
     line-height: 53px;
   }
 
-  .rustimg{
-    width: 150px;
-    top: 90%;
-    left: 8%;
-
-  }
-  .rust a h1{
+  .cpp a h1{
     top: 83%;
     left: 10%;
     font-weight: bold;
