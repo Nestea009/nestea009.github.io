@@ -1,6 +1,6 @@
 @font-face {
   font-family: Renogare;
-  src: url(Renogare-Regular.otf);
+  src: url(../../Renogare-Regular.otf);
   font-weight: normal;
 }
 
@@ -13,7 +13,7 @@
 .banner{
   width: 100%;
   height: 280vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(backgroundimg.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../Imgs/Other/backgroundimg.png);
   background-size: cover;
   background-position: center;
 }

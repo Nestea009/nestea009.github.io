@@ -1,6 +1,6 @@
 @font-face {
   font-family: Renogare;
-  src: url(Renogare-Regular.otf);
+  src: url(../../Renogare-Regular.otf);
   font-weight: normal;
 }
 
@@ -12,8 +12,8 @@
 
 .banner{
   width: 100%;
-  height: 340vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(backgroundimg.png);
+  height: 300vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../Imgs/Other/backgroundimg.png);
   background-size: cover;
   background-position: center;
 }
@@ -65,10 +65,9 @@
 .content{
   position: absolute;
   width: 100%;
-  top: 172%; 
+  top: 90%;
   transform: translateY(-50%);
   text-align: center;
-  justify-content: baseline;
 }
 
 .content h2{
@@ -78,9 +77,23 @@
   font-weight: 100;
 }
 
-#slider {
-  position: relative;
-  top: 30%;
+.swiper{
+  position: absolute;
+  width: 80%;
+  height: 65%;
+  top: -70%;
+}
+
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.slider {
+  position: absolute;
+  top: 12%;
   left: 18%;
   width: 60%;
   height: 60%;
@@ -89,34 +102,44 @@
 	overflow: hidden;
 }
 
-#slider figure {
+.slider figure {
 	position: relative;
 	width: 500%;
-	margin-top: 50px;
+	margin: 0;
 	left: 0;
 	animation: 20s slider infinite;
 }
 
-#slider figure img {
+.slider figure img {
 	float: left;
 	width: 20%;
 }
 
-.text p{
+.content p{
   position: relative;
-  margin-top: 100px;
-  color: white; 
+  color: white;
+  top: 650px;
+}
+
+.content p h{
+  font-size: 40px;
+  color: #009688;
+  font-style: oblique;
 
 }
 
-.text p a{
-  color:#009688;
-  font-size: 25px;
+.content p a{
+  position: relative;
+  color: white;
+
 }
 
-.text p b{
-  color:#009688;
-  font-size: 35px;
+.content p b{
+  font-size: 30px;
+  color: #009688;
+  font-weight: 300;
+  font-style: oblique;
+  
 }
 
 @keyframes slider {
