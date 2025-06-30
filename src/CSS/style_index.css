@@ -63,10 +63,13 @@
 .content{
  color: #fff;
  position: absolute;
- width: 100%;
+ width: 50%;
  top: 50%; 
+ left: 38%;
  transform: translateY(-50%);
  text-align: center;
+ align-items: center;
+ justify-content: center;
 }
 
 .content p{
@@ -74,7 +77,41 @@
   font-size: 25px;
   font-weight: 70;
   line-height: 50px; 
+  position: relative;
+  width: fit-content;
+  left: -9%;
 }
+
+.content h1{
+  font-size: 50px;
+  margin: 25px;
+  width: fit-content;
+  color:#ffffff;
+  animation: fade 2s;
+  position: relative;
+  color: #009688;
+  font-weight: 100;
+}
+
+.content img{
+  position: relative;
+  width: 60%;
+  left: -28%;
+
+}
+
+@keyframes fade{
+from{
+opacity:0;
+left: 30%;
+}
+
+to{
+opacity: 1;
+left: 0%;
+}
+}
+
 /*
 Este código lo he encontrado y parece no hacer nada, sería para testear.
 Lo he comentado por si resulta ser importante.
@@ -119,36 +156,6 @@ button:hover{
   border: none; 
 }
 */
-
-.content h1{
-  font-size: 50px;
-  margin: 25px;
-  color:#ffffff;
-  animation: fade 2s;
-  position: absolute;
-  top: 64%;
-  left: 36%;
-  color: #009688;
-  font-weight: 100;
-}
-
-.logo_p{
-  position: relative;
-  width: 30%;
-  height: 30%;
-}
-
-@keyframes fade{
-from{
-opacity:0;
-left: 23%;
-}
-
-to{
-opacity: 1;
-left: 36%;
-}
-}
 
 @media (orientation: portrait) {
     
@@ -208,7 +215,7 @@ left: 36%;
     animation: fade1 2s;
     position: absolute;
     top: -25%;
-    left: 10%;
+    left: 15%;
   }
   
 
